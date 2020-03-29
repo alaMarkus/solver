@@ -14,7 +14,7 @@ public class Solve{
         Scanner scanner = new Scanner(System.in);
 
         String input ="";
-        while (input.length()!= 16){
+        while (input.length()!= 16){        //halt until user inputs 16 letters
             System.out.println("insert 16 letters");
             input = scanner.nextLine();
             if (input.contentEquals("exit")){
