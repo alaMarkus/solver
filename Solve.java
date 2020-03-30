@@ -47,7 +47,7 @@ public class Solve{
                     start[1] = j;
 
                     word = values.getLetter(start);
-            //        System.out.println("starting letter: "+word);
+                    System.out.println("starting letter: "+word);
 
                     current[0]=start[0]-1;
                     current[1]=start[1]-1;
@@ -61,7 +61,7 @@ public class Solve{
 
             //                scanner.nextLine();
                             word = word+values.getLetter(current);
-            //                System.out.println(word);
+                            System.out.println(word);
 
                             if(search.find(word)){
                                 int[] toAdd = new int[]{current[0],current[1]};
@@ -79,7 +79,7 @@ public class Solve{
                         }
                     }
             //        printPath(path);
-            //        System.out.println(word);
+                    System.out.println(word);
                     current = next.nextCurrent(current, start);
             //        System.out.println("next current: "+current[0]+","+current[1]);
                     if (current[0]>=start[0]+2){
